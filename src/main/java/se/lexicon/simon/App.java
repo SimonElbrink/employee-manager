@@ -25,5 +25,21 @@ public class App
         System.out.println("erik = " + erik);
 
 
+
+        SalesPerson salesPerson01 = new SalesPerson("Kent",LocalDate.of(2020,1,1));
+        salesPerson01.addNewClient("Bertil - AB");
+
+        System.out.println("salesPerson01 = " + salesPerson01);
+
+        SalesPerson salesPerson02 = new SalesPerson("Marcus",LocalDate.of(2020,1,1));
+
+        MyUtil.transferClient(salesPerson01,salesPerson02, "Bertil - AB");
+
+        System.out.println("salesPerson01 = " + salesPerson01);
+        System.out.println("salesPerson02 = " + salesPerson02);
+
+
+
+
     }
 }
