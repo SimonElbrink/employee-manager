@@ -25,7 +25,7 @@ public abstract class Employee {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    protected void setSalary(int salary) {
         this.salary = salary;
     }
 
@@ -53,13 +53,4 @@ public abstract class Employee {
         this.dateHired = dateHired;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", salary=" + salary +
-                ", name='" + name + '\'' +
-                ", dateHired=" + dateHired +
-                '}';
-    }
 }

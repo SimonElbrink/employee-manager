@@ -13,8 +13,11 @@ public class App
 
         System.out.println( "Hello World!" );
 
-        SystemDeveloper simon = new SystemDeveloper("Simon", LocalDate.of(2020,1,1), new String[0], new String[]{"Java"});
+        SystemDeveloper simon = new SystemDeveloper("Simon", LocalDate.of(2020,1,1));
         simon.addCertificate("OCA");
+
+        simon.calculateSalary();
+        System.out.println("simon.getSalary() = " + simon.getSalary());
 
         String[] certificates = {"OCA", "OCP"};
         Employee erik = new SystemDeveloper("Erik", LocalDate.parse("2016-01-01"), certificates, new String[]{"Java"," C++"});
