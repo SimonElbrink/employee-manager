@@ -29,6 +29,25 @@ public class SystemDeveloper extends Employee{
         this.setSalary(salaryTotal);
     }
 
+    /**
+     * Convenient Method
+     */
+    public void addLanguage(String language){
+        String[] newArray = Arrays.copyOf(languages, languages.length + 1);//make bigger array
+        newArray[newArray.length-1] = language;//Put the new language in the bigger array
+        languages = newArray;
+    }
+
+    /**
+     * Convenient Method
+     */
+    public void addCertificate(String certificate){
+        String[] newArray = Arrays.copyOf(this.certificates, this.certificates.length + 1);//make bigger array
+        newArray[newArray.length-1] = certificate;//Put the new certificates in the bigger array
+        this.certificates = newArray;
+
+    }
+
     public String[] getCertificates() {
         return certificates;
     }
@@ -44,22 +63,6 @@ public class SystemDeveloper extends Employee{
     public void setLanguages(String[] languages) {
         this.languages = languages;
     }
-
-    //Convenient Method
-    public void addLanguage(String language){
-        String[] newArray = Arrays.copyOf(languages, languages.length + 1);//make bigger array
-        newArray[newArray.length-1] = language;//Put the new language in the bigger array
-        languages = newArray;
-    }
-
-    //Convenient Method
-    public void addCertificate(String certificate){
-        String[] newArray = Arrays.copyOf(this.certificates, this.certificates.length + 1);//make bigger array
-        newArray[newArray.length-1] = certificate;//Put the new certificates in the bigger array
-        this.certificates = newArray;
-
-    }
-
 
     @Override
     public String toString() {
