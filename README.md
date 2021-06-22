@@ -11,4 +11,7 @@ have acquired.
 - Also make a toString implementation for SystemDevelopers and SalesPerson.
 - Whenever they acquire new clients, certificates and languages the salary should update.
 
-![Class Diagram.png](Class Diagram.png)
+
+---
+
+![Class Diagram](Class-Diagram.png)
