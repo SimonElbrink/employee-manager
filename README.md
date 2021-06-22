@@ -1,5 +1,7 @@
 ## Practice: Employee management
 
+> OBS! SalesPerson Is not fully implemented. in this project example, nor Tested.
+
 - Create a new class called Employee.
 - Create two classes SystemDeveloper and SalesPerson that should inherit from employee.
 - Each employee has a base salary of 25 000 a month when hired.
